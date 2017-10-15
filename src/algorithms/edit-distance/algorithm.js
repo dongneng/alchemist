@@ -53,3 +53,21 @@ export const createDpTable = (
 
   return createTable();
 };
+
+export const createStyleTable = (
+  str1: string,
+  str2: string,
+  defaultStyle: string,
+  goingStyle: string
+): Array<Array<string>> => {
+  const rowLength = str1.length + 2;
+  const colLength = str2.length + 2;
+  const table: Array<Array<string>> = [];
+  for (let row = 0; row < rowLength; row += 1) {
+    table.push(Array(colLength).fill(defaultStyle));
+  }
+  if (rowLength > 0 && colLength > 0) {
+    table[1][1] = goingStyle;
+  }
+  return table;
+};

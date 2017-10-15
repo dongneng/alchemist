@@ -7,7 +7,11 @@ import { buttonClick } from "./actions";
 
 export function createTable() {
   const mapStateToProps = (state, ownProps) => {
-    return { ...state, table: state.editDistanceReducer.table };
+    return {
+      ...state,
+      table: state.editDistanceReducer.table,
+      styles: state.editDistanceReducer.styles
+    };
   };
 
   const mapDispatchToProps = dispatch => {
