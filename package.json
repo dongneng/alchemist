@@ -26,7 +26,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
     "eject": "react-scripts eject",
-    "homepage": "https://tian-kong.github.io/myapp"
+    "homepage": "https://tian-kong.github.io"
   },
   "lint-staged": {
     "*.{js,json,css}": [
